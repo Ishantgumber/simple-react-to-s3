@@ -31,10 +31,10 @@ jobs:
         run: STAGE=dev npm run build
       
       - name: copy files to s3
-        run: aws s3 sync ./dist s3://youtube-actions-to-s3
+        run: aws s3 sync ./dist s3://actions-to-s3
 
       - name: Invalidate cache
         run: |
           aws cloudfront create-invalidation \
-            --distribution-id E5WDKB9Z09WWL \
+            --distribution-id E1J3475H6USRA7 \
             --paths "/*"
