@@ -10,7 +10,7 @@ const Counter = () => {
       </p>
       <button
         type="button"
-        className="px-4 py-2 mt-2 text-white bg-pink-400 rounded"
+        className="px-4 py-2 mt-2 text-white bg-blue-400 rounded"
         onClick={() => setCount(count + 1)}
       >
         Click me!
